@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CheckPackage>
+	<Parameters PaymentType="1" TaxVariant="3" CustomerEmail="" CustomerPhone=""/>
+	<Positions>
+		<FiscalString Name="Замена масла в двигателе" Quantity="1.5" Price="1200" Amount="1800" Department="3" Tax="none"/>
+		<FiscalString Name="Замена фильтров" Quantity="1.5" Price="1200" Amount="1800" Department="3" Tax="none"/>
+		<FiscalString Name="Шприцовка" Quantity="1" Price="1200" Amount="1200" Department="3" Tax="none"/>
+		<FiscalString Name="Протяжка балансиров" Quantity="2" Price="1200" Amount="2400" Department="3" Tax="none"/>
+		<FiscalString Name="Диагностика реактивных штанг" Quantity="0.5" Price="1200" Amount="600" Department="3" Tax="none"/>
+		<FiscalString Name="Зарядка АКБ" Quantity="0.5" Price="1200" Amount="600" Department="3" Tax="none"/>
+		<FiscalString Name="Ремонт кулисы" Quantity="2" Price="1200" Amount="2400" Department="3" Tax="none"/>
+	</Positions>
+	<Payments Cash="10800" CashLessType1="0" CashLessType2="0" CashLessType3="0"/>
+</CheckPackage>

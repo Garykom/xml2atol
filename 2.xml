@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CheckPackage>
+	<Parameters PaymentType="1" TaxVariant="0" CustomerEmail="" CustomerPhone=""/>
+	<Positions>
+		<FiscalString Name="5320-2918122-00   ПРОКЛАДКА КРЫШКИ БАШМАКА" Quantity="2" Price="16" Amount="32" Department="2" Tax="18"/>
+		<FiscalString Name="1105040 СМЕННЫЙ ЭЛЕМЕНТ PL 420 Х МАН 666,1105010  6660659210" Quantity="1" Price="2275" Amount="2275" Department="2" Tax="18"/>
+		<FiscalString Name="7405-1012038-00   ЭЛЕМЕНТ ФИЛЬТРУЮЩИЙ ГРУБОЙ ОЧИСТКИ МАСЛА  1012040" Quantity="1" Price="235" Amount="235" Department="2" Tax="18"/>
+		<FiscalString Name="7405-1017040-00   ЭЛЕМЕНТ ФИЛЬТРУЮЩИЙ ТОНКОЙ ОЧИСТКИ МАСЛА       МЕТАЛЛ!!!!!!!!!" Quantity="1" Price="1060" Amount="1060" Department="2" Tax="18"/>
+		<FiscalString Name="ЕВРО-1012009-00   РЕМ.К-Т  МАСЛЯНЫХ ФИЛЬТРОВ  ЕВРО" Quantity="1" Price="324" Amount="324" Department="2" Tax="18"/>
+		<FiscalString Name="КО10-40.18  Масло КАМАЗ ОПТИМУМ  SAE 10w40   CI-4/SL 18лит Лукойл        Д3/D3" Quantity="2" Price="3697" Amount="7394" Department="2" Tax="18"/>
+		<FiscalString Name="СМАЗКА Shell Retinax  EP2  (0,4 кг.)     (шелл)   гадус     Mobil  ХНР 222" Quantity="3" Price="240" Amount="720" Department="2" Tax="18"/>
+		<FiscalString Name="740-1117117-00   РЕМ.К-Т ФИЛЬТРА Т/ОЧИСТКИ                             (1117000)" Quantity="2" Price="103" Amount="206" Department="2" Tax="18"/>
+		<FiscalString Name="ЭФТ013-1117040   ЭЛЕМЕНТ ТОПЛИВНОГО ФИЛЬТРА  (с  метал.сеткой)" Quantity="2" Price="50" Amount="100" Department="2" Tax="18"/>
+		<FiscalString Name="721-1109560-10  Элемент фильтрующий воздушного фильтра  основной  /300*190*471/" Quantity="1" Price="1540" Amount="1540" Department="2" Tax="18"/>
+		<FiscalString Name="721-1109560-30  Элемент фильтрующий воздушного фильтра  предохранит /182*144*448" Quantity="1" Price="595" Amount="595" Department="2" Tax="18"/>
+		<FiscalString Name="362-1703420-00 ХВОСТОВИК ДЛИННЫЙ М14+1,5 (нар. резьб)" Quantity="1" Price="760" Amount="760" Department="2" Tax="18"/>
+	</Positions>
+	<Payments Cash="15241" CashLessType1="0" CashLessType2="0" CashLessType3="0"/>
+</CheckPackage>
