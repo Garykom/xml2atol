@@ -280,13 +280,13 @@ type
   begin
     Result := -1;
     if TaxString = '18' then
-      Result := 3;
+      Result := 1;
     if TaxString = '10' then
       Result := 2;
     if TaxString = '0' then
-      Result := 1;
+      Result := 5;
     if TaxString = 'none' then
-      Result := 4;
+      Result := 6;
   end;
 
   function TFR.AtolGetTaxVariantByLong(TaxVariant: integer): byte;
@@ -499,8 +499,8 @@ type
     Result := FR.SetMode(1, '30');
     if Result = -3822 then
     begin
-      FR.PrintString('Смена превысила 24 часа!');
-      FR.PrintString('Для продолжения снимите Z-Отчет.');
+      FR.PrintString(UTF8ToAnsi('Смена превысила 24 часа!'));
+      FR.PrintString(UTF8ToAnsi('Для продолжения снимите Z-Отчет.'));
       FR.Feed(6);
       FR.PartialCut();
       FR.Stop();
