@@ -14,7 +14,7 @@ uses {$IFDEF UNIX} {$IFDEF UseCThreads}
 
 type
   TFiscalString = record
-    Name: widestring;
+    Name: WideString;
     Quantity: double;
     Price: double;
     Amount: double;
@@ -25,7 +25,7 @@ type
   TCheck = record
     PaymentType: byte;
     TaxVariant: byte;
-    CustomerEmail, CustomerPhone: widestring;
+    CustomerEmail, CustomerPhone: WideString;
     Positions: array of TFiscalString;
     Cash, CashLessType1, CashLessType2, CashLessType3: double;
   end;
@@ -42,10 +42,10 @@ type
     procedure CancelCheck;
     procedure Stop;
     function OpenCheck(CheckMode: integer; CheckType: integer): integer;
-    procedure Registration(Name: widestring; Price: double; Quantity: double;
+    procedure Registration(Name: WideString; Price: double; Quantity: double;
       TaxTypeNumber: integer; Department: integer; DiscountType: integer;
       DiscountValue: double);
-    procedure PrintString(str: widestring);
+    procedure PrintString(str: WideString);
     procedure Payment(Summ: double; TypeClose: integer; var Remainder: double;
       var Change: double);
     procedure WriteAttribute(AttrNumber: integer; AttrValue: string);
@@ -151,9 +151,9 @@ type
     Result := ECR.OpenCheck();
   end;
 
-  procedure TFR.Registration(Name: widestring; Price: double; Quantity: double;
-    TaxTypeNumber: integer; Department: integer; DiscountType: integer;
-    DiscountValue: double);
+  procedure TFR.Registration(Name: WideString; Price: double;
+    Quantity: double; TaxTypeNumber: integer; Department: integer;
+    DiscountType: integer; DiscountValue: double);
   begin
     ECR.Name := Name;
     ECR.Price := Price;
@@ -170,7 +170,7 @@ type
       exit;
   end;
 
-  procedure TFR.PrintString(str: widestring);
+  procedure TFR.PrintString(str: WideString);
   begin
     ECR.Caption := str;
     ECR.TextWrap := 1;
@@ -278,15 +278,24 @@ type
 
   function TFR.AtolGetTaxByString(TaxString: string): integer;
   begin
-    Result := -1;
+    Result := 0;
     if TaxString = '18' then
-      Result := 1;
+      Result := 3;
+    if TaxString = '20' then
+      Result := 3;
     if TaxString = '10' then
       Result := 2;
     if TaxString = '0' then
-      Result := 5;
+      Result := 1;
     if TaxString = 'none' then
+      Result := 4;
+    if TaxString = '10/110' then
+      Result := 5;
+    if TaxString = '18/118' then
       Result := 6;
+    if TaxString = '20/120' then
+      Result := 6;
+
   end;
 
   function TFR.AtolGetTaxVariantByLong(TaxVariant: integer): byte;
@@ -490,7 +499,7 @@ type
     i: integer;
 
     Remainder, Change: double;
-    ResultDescription: widestring;
+    ResultDescription: WideString;
   begin
     FR := TFR.Create;
     FR.Init;
@@ -500,7 +509,8 @@ type
     if Result = -3822 then
     begin
       FR.PrintString(UTF8ToAnsi('Смена превысила 24 часа!'));
-      FR.PrintString(UTF8ToAnsi('Для продолжения снимите Z-Отчет.'));
+      FR.PrintString(UTF8ToAnsi(
+        'Для продолжения снимите Z-Отчет.'));
       FR.Feed(6);
       FR.PartialCut();
       FR.Stop();

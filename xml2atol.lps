@@ -2,20 +2,41 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="10"/>
+    <Version Value="11"/>
     <BuildModes Active="Default"/>
     <Units Count="1">
       <Unit0>
         <Filename Value="xml2atol.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="262"/>
-        <CursorPos X="18" Y="289"/>
-        <FoldState Value=" T3ia2381D61e"/>
+        <TopLine Value="255"/>
+        <CursorPos X="24" Y="292"/>
+        <FoldState Value=" T3ia2373219e"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="xml2atol.lpr"/>
+        <Caret Line="510" Column="22" TopLine="489"/>
+      </Position1>
+      <Position2>
+        <Filename Value="xml2atol.lpr"/>
+        <Caret Line="285" Column="18" TopLine="246"/>
+      </Position2>
+      <Position3>
+        <Filename Value="xml2atol.lpr"/>
+        <Caret Line="282" Column="25" TopLine="263"/>
+      </Position3>
+      <Position4>
+        <Filename Value="xml2atol.lpr"/>
+        <Caret Line="287" Column="24" TopLine="263"/>
+      </Position4>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>
